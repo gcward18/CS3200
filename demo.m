@@ -5,6 +5,7 @@
 % User interface to execute different functions
 % cleanup
 % create new window for plots
+hf=figure;
 
 % Display in command window the contents without the name
 disp('Calculating Exponential')
@@ -20,7 +21,7 @@ hold on
 % display 5 digits in numbers
   format short
 
-hError    = uimenu(gcf,'Label','ErrorOfApproximation');
+hError    = uimenu(gcf,   'Label','ErrorOfApproximation');
 raw       = uimenu(hError,'Label','RawCalculation','callback','demoRaw');
 direct    = uimenu(hError,'Label','DirectCalculation','callback','demoDirect');
 indirect  = uimenu(hError,'Label','InDirectCalculation','callback','demoInDirect');

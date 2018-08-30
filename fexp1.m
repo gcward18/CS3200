@@ -1,4 +1,4 @@
-function [approx,trueRelErr,appRelErr]=method1(actual,x,n)
+function [approx,trueRelErr,appRelErr] = method1(actual,x,n)
 % name of file is fexp1, name of function is method1. Invocation is by file name
 % Direct method
 %'Method1 1+x+...'

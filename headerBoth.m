@@ -27,10 +27,21 @@ fprintf('\n\t\tApproximate Values\t\tTrue Relative Error\t\tApproximate Relative
 fprintf('\n\tOrder\tMethod1\t\tMethod2\t\tMethod1\t\tMethod2\t\tMethod1\t\tMethod2\n')
 fprintf('\n\t------------------------------------------------------------------------------------------------\n')
 n = 1:20;
+
 s1 = 1; % series starts at 1
 for i=1:numel(n) % from 1 to size of the array 
-  fexp1(s1,i,i-1);
-  fprintf('\n\t  %d\t  %f\t%f\t%f\t%f\t%f\t%f',i, i, xM, ym, yM, ym)
+  if i == 1
+    approx1 = 1;
+    approx2 = 1;
+    trueRelErr1 = ((exp(0.5) - 1)/exp(0.5)) * 100;
+    trueRelErr2 = ((exp(0.5) - 1)/exp(0.5)) * 100;
+    appRelErr1 = 0;
+    appRelErr2 = 0;
+  else  
+    [approx1,trueRelErr1,appRelErr1] = fexp1(exp(0.5),0.5,i-1);
+    [approx2,trueRelErr2,appRelErr2] = fexp2(exp(0.5),0.5,i-1);
+  end
+  fprintf('\n\t  %d\t  %5.3f\t\t%5.3f\t\t%5.3f\t\t%5.3f\t\t%5.3f\t\t%5.3f',i, approx1, approx2,  trueRelErr1, trueRelErr2, appRelErr1,appRelErr2)
 end;
 fprintf('\n')
 % approximate value for upto nth order derive terms polynomial
