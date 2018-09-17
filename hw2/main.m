@@ -25,7 +25,6 @@ hold on
 
 # print the columns required for the assignment
 printCols
-
 printGraph
 
 fprintf('\n')
