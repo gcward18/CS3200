@@ -8,10 +8,12 @@ af     = @(x) (x - 2) ^4;
 adf    = @(x) 4*(x-2)^3;
 agx    = @(x,fx,df) x - (fx/df);
 
+
 guess1= 3;
 guess2= 3;
 errTol= 0.00001;
 iterUp= 20;
+appRoot = [];
 
 % setting labels of the graph
 xlabel(sx)
@@ -36,22 +38,24 @@ p = plot(x,y);
 xlim([1 3])
 ylim([0 1])
 
+fx = [];
+dfx = [];
+g = [];
 % reset guess because we are going to use it again
 guess1 = 3;
-# 20 iterations for finding approximate zero
-for i=1:20
-  
+%20 iterations for finding approximate zero
+for i=1:20     
   appRoot(i) = guess1;
-
   % functions for finding the root (x-2)^4
   fx(i)   = af(appRoot(i));     %  fx = (x-2)^4
   dfx(i)  = adf(appRoot(i));    %  dfx = 4(x-2)^3
   g(i)    = agx(appRoot(i),fx(i),dfx(i));  % gx = x - (x-2)^4 / 4(x-2)^3 
+
   text1 = num2str(i);
   text(appRoot(i),fx(i), text1, 'Color', 'Blue')
   text(appRoot(i), 0   , text1, 'Color', 'red')
   guess1 = g(i);
-end;
+end
 
 plot(0,0,'','Color','Blue')
 plot(0,0,'','Color','Red')
