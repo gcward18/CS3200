@@ -13,10 +13,19 @@ sx = "Approximate root-values";
 sy = "The approximate function-values";
 st = "Newton Raphson for (x-2)^4\nInital guess = 3, tolerance 0.000001";
 
+figure
+
 x     = 3;  
 af     = @(x) (x - 2) ^4;
 adf    = @(x) 4*(x-2)^3;
 agx    = @(x,fx,df) x - (fx/df);
+
+i=1
+for j=1:0.1:3
+  x(i) = af(i);
+  i+=1
+end
+plot(x)
 
 guess1= 3;
 guess2= 3;
@@ -43,7 +52,7 @@ for j=1:0.1:20
   appRoot(i) = x;
   fx(i)      = af(appRoot(i));
   dfx(i)     = adf(appRoot(i));
-  g(i)    = agx(appRoot(i),fx(i),dfx(i));
+  g(i)        = agx(appRoot(i),fx(i),dfx(i));
   if i == 0
     fprintf('\n\t  %d\t\t %f \t %f \t %f',i-1, appRoot(i), fx(i), dfx(i))
   else

@@ -1,0 +1,80 @@
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+23-Sep-2018 22:56:12
+***** The input matrix A and vector B are:
+	 -2  2   2 	|   8
+	 2  -1   -3 	|   -9
+	 2  1   -4 	|   -8
+Iteration 1 over all remaining rows of A
+	 -2  2   2 
+	 0  1   -1 
+	 0  3   -2 
+Iteration 2 over all remaing rows of A
+	 -2  2   2 
+	 0  1   -1 
+	 0  0   1 
+After Gauss forward elimination the L matrix:
+	 -2  2   2 
+	 -1  1   -1 
+	 -1  3   1 
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+-2    2    2  		|  8  	|     -2   2   2	|  8 	|    1
+
+2    -1    -3  		|  -9  	|     -1   1   -1	|  -1 	|    2
+
+2    1    -4  		|  -8  	|     -1   3   1	|  3 	|    3
+
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+	 8   8
+	 -9   -9
+	 -8   -8
+23-Sep-2018 22:56:12
+Elapsed time is 0.00431299 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+25-Sep-2018 21:16:00
+***** The input matrix A and vector B are:
+	 -2  2   2 	|   8
+	 2  -1   -3 	|   -9
+	 2  1   -4 	|   -8
+Iteration 1 over all remaining rows of A
+	 -2  2   2 
+	 0  1   -1 
+	 0  3   -2 
+Iteration 2 over all remaing rows of A
+	 -2  2   2 
+	 0  1   -1 
+	 0  0   1 
+After Gauss forward elimination the L matrix:
+	 -2  2   2 
+	 -1  1   -1 
+	 -1  3   1 
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+-2    2    2  		|  8  	|     -2   2   2	|  8 	|    1
+
+2    -1    -3  		|  -9  	|     -1   1   -1	|  -1 	|    2
+
+2    1    -4  		|  -8  	|     -1   3   1	|  3 	|    3
+
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+	 8   8
+	 -9   -9
+	 -8   -8
+25-Sep-2018 21:16:00
+Elapsed time is 0.23174 seconds.
