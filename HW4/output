@@ -1,0 +1,2116 @@
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:11:20
+***** The input matrix A and vector B are:
+sum = 0
+ans = 0
+sum =  36
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+    15.00000 +   0.00000i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+ans =  1
+sum = -7.5000
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+sum = -27.500
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+ans =  2
+sum = -100.83
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i    32.86082 +   0.00000i
+
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i    32.86082 +   0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 54 column 3
+error: 'X' undefined near line 54 column 7
+>> clear
+>> clc
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:13:10
+***** The input matrix A and vector B are:
+sum = 0
+ans = 0
+sum =  64
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+    15.00000 +   0.00000i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+ans =  1
+sum =  0.20413 - 0.97894i
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+sum = 0
+sum = -14.224
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i    32.31314 -   0.28862i   979.00000 +   0.00000i
+
+sum = 0
+ans =  2
+sum =  0.28923 + 0.95726i
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i    32.31314 -   0.28862i    31.28436 -   0.01530i
+
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i    32.31314 -   0.28862i    31.28436 -   0.01530i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 54 column 3
+error: 'X' undefined near line 54 column 7
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> 
+>> clear
+>> clc
+>> main
+parse error near line 31 of file /home/gcwzf4/Desktop/CS3200/CS3200/HW4/main.m
+
+  syntax error
+
+>>>       sum = sum + a(i,j) * a(k,j;
+                                    ^
+
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:13:58
+***** The input matrix A and vector B are:
+ans = 0
+ans =  1
+ans =  2
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i    32.31314 -   0.28862i    31.28436 -   0.01530i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 54 column 3
+error: 'X' undefined near line 54 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:14:29
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+ans =  1
+ans =  2
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i    32.31314 -   0.28862i    31.28436 -   0.01530i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 54 column 3
+error: 'X' undefined near line 54 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:15:50
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+error: called from
+    main at line 36 column 12
+error: a(0+1i,_): subscripts must be either integers 1 to (2^31)-1 or logicals
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:16:41
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+error: called from
+    main at line 36 column 14
+error: a(_,0): subscripts must be either integers 1 to (2^31)-1 or logicals
+>> clc
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:16:47
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+error: called from
+    main at line 36 column 14
+error: a(_,0): subscripts must be either integers 1 to (2^31)-1 or logicals
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:17:44
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+ans =  1
+ans =  2
+a =
+
+     0.00000 +   7.61577i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   1.96960i     7.40272 +   0.06612i   225.00000 +   0.00000i
+     0.00000 -   7.22185i    32.31314 -   0.28862i    31.28436 -   0.01530i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 55 column 3
+error: 'X' undefined near line 55 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:19:01
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+ans =  1
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+ans =  2
+a =
+
+     0    15    55
+   Inf     0   225
+   Inf  -Inf     0
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 55 column 3
+error: 'X' undefined near line 55 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:20:00
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+ans =  1
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+ans =  2
+a =
+
+     0     0    55
+   Inf     0   225
+   Inf  -Inf     0
+
+a =
+
+     0     0     0
+   Inf     0   225
+   Inf  -Inf     0
+
+a =
+
+     0     0     0
+   Inf     0     0
+   Inf  -Inf     0
+
+a =
+
+     0     0     0
+   Inf     0     0
+   Inf  -Inf     0
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 61 column 3
+error: 'X' undefined near line 61 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:20:09
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+ans =  1
+ans =  2
+a =
+
+     1     0    55
+    15     1   225
+    55  -600     1
+
+a =
+
+     1     0     0
+    15     1   225
+    55  -600     1
+
+a =
+
+     1     0     0
+    15     1     0
+    55  -600     1
+
+a =
+
+     1     0     0
+    15     1     0
+    55  -600     1
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 61 column 3
+error: 'X' undefined near line 61 column 7
+>> x = sqrt(5)
+x =  2.2361
+>> x = [1,2,4,5]
+x =
+
+   1   2   4   5
+
+>> x(4) = sqrt(x(4))
+x =
+
+   1.0000   2.0000   4.0000   2.2361
+
+>> x(4) = sqrt(x(4))
+x =
+
+   1.0000   2.0000   4.0000   1.4953
+
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:23:41
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+ans =  1
+ans =  2
+sum =   -3.6029e+16
+sum =    3.6029e+16
+sum =   -3.6029e+16
+a =
+
+   1.0000e+00 + 0.0000e+00i   0.0000e+00 + 1.8981e+08i   1.8981e+08 + 0.0000e+00i
+   1.5000e+01 + 0.0000e+00i   1.0000e+00 + 0.0000e+00i   0.0000e+00 + 1.8981e+08i
+   5.5000e+01 + 0.0000e+00i  -6.0000e+02 + 0.0000e+00i   1.0000e+00 + 0.0000e+00i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 63 column 3
+error: 'X' undefined near line 63 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:24:37
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+ans =  1
+ans =  2
+sum = -3024
+sum =  3025
+sum = -3024
+a =
+
+     1.00000 +   0.00000i     0.00000 +  54.99091i    55.00000 +   0.00000i
+    15.00000 +   0.00000i     1.00000 +   0.00000i     0.00000 +  54.99091i
+    55.00000 +   0.00000i  -600.00000 +   0.00000i     1.00000 +   0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 63 column 3
+error: 'X' undefined near line 63 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:25:21
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+error: called from
+    main at line 41 column 12
+error: a(0+1i,_): subscripts must be either integers 1 to (2^31)-1 or logicals
+>> clear
+>> clc
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:25:26
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+error: called from
+    main at line 41 column 12
+error: a(0+1i,_): subscripts must be either integers 1 to (2^31)-1 or logicals
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:25:47
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+ans =  1
+sum =  62.500
+ans =  2
+sum =  1079.8
+a =
+
+     0.00000 +   5.47723i     0.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i    32.86082 +   0.00000i
+
+a =
+
+     0.00000 +   5.47723i     0.00000 +   0.00000i     0.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i    32.86082 +   0.00000i
+
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 63 column 3
+error: 'X' undefined near line 63 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:26:16
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+ans =  1
+sum =  62.500
+ans =  2
+sum =  1079.8
+a =
+
+     0.00000 +   5.47723i     0.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i    32.86082 +   0.00000i
+
+a =
+
+     0.00000 +   5.47723i     0.00000 +   0.00000i     0.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i    32.86082 +   0.00000i
+
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 63 column 3
+error: 'X' undefined near line 63 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:29:20
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+ans =  1
+sum =  62.500
+ans =  2
+sum =  1079.8
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 64 column 3
+error: 'X' undefined near line 64 column 7
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+01-Oct-2018 12:30:22
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+ans =  1
+sum =  62.500
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i   979.00000 +   0.00000i
+
+ans =  2
+sum =  1079.8
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 10:42:06
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+ans =  1
+sum =  62.500
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i   979.00000 +   0.00000i
+
+ans =  2
+sum =  1079.8
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 64 column 3
+error: 'X' undefined near line 64 column 7
+>> clear
+>> clc
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 10:43:44
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i    55.00000 +   0.00000i   225.00000 +   0.00000i
+    55.00000 +   0.00000i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+ans =  1
+sum =  62.500
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i   225.00000 +   0.00000i   979.00000 +   0.00000i
+
+a =
+
+     0.00000 +   5.47723i    15.00000 +   0.00000i    55.00000 +   0.00000i
+     0.00000 -   2.73861i     7.90569 +   0.00000i   225.00000 +   0.00000i
+     0.00000 -  10.04158i    31.93900 +   0.00000i   979.00000 +   0.00000i
+
+ans =  2
+sum =  1079.8
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 64 column 3
+error: 'X' undefined near line 64 column 7
+>> A
+A =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+>> a
+a =
+
+    0.00000 +  5.47723i    0.00000 +  0.00000i    0.00000 +  0.00000i
+    0.00000 -  2.73861i    7.90569 +  0.00000i    0.00000 +  0.00000i
+    0.00000 - 10.04158i   31.93900 +  0.00000i   32.86082 +  0.00000i
+
+>> lu(A)
+ans =
+
+    55.00000   225.00000   979.00000
+     0.10909    -9.54545   -51.80000
+     0.27273     0.66667    -7.46667
+
+>> [L,U] = lu(A)
+L =
+
+   0.10909   1.00000   0.00000
+   0.27273   0.66667   1.00000
+   1.00000   0.00000   0.00000
+
+U =
+
+    55.00000   225.00000   979.00000
+     0.00000    -9.54545   -51.80000
+     0.00000     0.00000    -7.46667
+
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:39:35
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+a =
+
+   -30.00000    15.00000    55.00000
+    -0.50000    55.00000   225.00000
+    55.00000   225.00000   979.00000
+
+ans =  1
+sum =  54.750
+a =
+
+   -30.00000    15.00000    55.00000
+    -0.50000    54.75000   225.00000
+    -1.83333   225.00000   979.00000
+
+a =
+
+   -30.00000    15.00000    55.00000
+    -0.50000    54.75000   225.00000
+    -1.83333     4.09285   979.00000
+
+ans =  2
+sum =  975.64
+a =
+
+   -30.00000     0.00000     0.00000
+    -0.50000    54.75000     0.00000
+    -1.83333     4.09285   975.63889
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+Verify the solution by substitution in the equations
+Original B and Computed AX of the system
+error: called from
+    main at line 64 column 3
+error: 'X' undefined near line 64 column 7
+>> clea
+error: 'clea' undefined near line 1 column 1
+>> clc
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:39:58
+***** The input matrix A and vector B are:
+a =
+
+     6    15    55
+    15    55   225
+    55   225   979
+
+ans = 0
+sum = -30
+a =
+
+   -30.00000    15.00000    55.00000
+    -0.50000    55.00000   225.00000
+    55.00000   225.00000   979.00000
+
+ans =  1
+sum =  54.750
+a =
+
+   -30.00000    15.00000    55.00000
+    -0.50000    54.75000   225.00000
+    -1.83333   225.00000   979.00000
+
+a =
+
+   -30.00000    15.00000    55.00000
+    -0.50000    54.75000   225.00000
+    -1.83333     4.09285   979.00000
+
+ans =  2
+sum =  975.64
+a =
+
+   -30.00000     0.00000     0.00000
+    -0.50000    54.75000     0.00000
+    -1.83333     4.09285   975.63889
+
+Elapsed time is 0.00227189 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:41:03
+***** The input matrix A and vector B are:
+a =
+
+    4    2    4
+    2   10    8
+    4    8   12
+
+ans = 0
+sum = -12
+a =
+
+  -12.00000    2.00000    4.00000
+   -0.16667   10.00000    8.00000
+    4.00000    8.00000   12.00000
+
+ans =  1
+sum =  9.9722
+a =
+
+  -12.00000    2.00000    4.00000
+   -0.16667    9.97222    8.00000
+   -0.33333    8.00000   12.00000
+
+a =
+
+  -12.00000    2.00000    4.00000
+   -0.16667    9.97222    8.00000
+   -0.33333    0.79666   12.00000
+
+ans =  2
+sum =  11.889
+a =
+
+  -12.00000    0.00000    0.00000
+   -0.16667    9.97222    0.00000
+   -0.33333    0.79666   11.88889
+
+Elapsed time is 0.00219011 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:41:33
+***** The input matrix A and vector B are:
+a =
+
+    4    2    4
+    2   10    8
+    4    8   12
+
+ans = 0
+sum = -12
+a =
+
+    4.00000    2.00000    4.00000
+    0.50000   10.00000    8.00000
+    4.00000    8.00000   12.00000
+
+ans =  1
+sum =  9.7500
+a =
+
+    4.00000    2.00000    4.00000
+    0.50000    0.50000    8.00000
+    1.00000    8.00000   12.00000
+
+a =
+
+    4.00000    2.00000    4.00000
+    0.50000    0.50000    8.00000
+    1.00000   15.00000   12.00000
+
+ans =  2
+sum =  11
+a =
+
+    4.00000    0.00000    0.00000
+    0.50000    0.50000    0.00000
+    1.00000   15.00000    1.00000
+
+Elapsed time is 0.00225282 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:43:07
+***** The input matrix A and vector B are:
+a =
+
+    4    2    4
+    2   10    8
+    4    8   12
+
+sum =  4
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+a =
+
+     0     2     4
+   Inf    10     8
+     4     8    12
+
+sum = -Inf
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+a =
+
+     0     2     4
+   Inf   Inf     8
+   Inf     8    12
+
+a =
+
+     0     2     4
+   Inf   Inf     8
+   Inf   NaN    12
+
+sum = NaN
+a =
+
+     0     0     0
+   Inf   Inf     0
+   Inf   NaN   NaN
+
+Elapsed time is 0.00239015 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:43:30
+***** The input matrix A and vector B are:
+a =
+
+    4    2    4
+    2   10    8
+    4    8   12
+
+sum =  4
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+a =
+
+     0     2     4
+   Inf    10     8
+     4     8    12
+
+sum = -Inf
+warning: division by zero
+warning: called from
+    main at line 33 column 12
+a =
+
+     0     2     4
+   Inf   Inf     8
+   Inf     8    12
+
+a =
+
+     0     2     4
+   Inf   Inf     8
+   Inf   NaN    12
+
+sum = NaN
+a =
+
+     0     0     0
+   Inf   Inf     0
+   Inf   NaN   NaN
+
+Elapsed time is 0.0087862 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:44:00
+***** The input matrix A and vector B are:
+a =
+
+    4    2    4
+    2   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00219202 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:46:17
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00226212 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:47:20
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+a =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00251293 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:47:36
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+a =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.0023129 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:47:49
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+a =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00201416 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:48:08
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+a =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00216317 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:48:17
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+a =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+L =
+
+   2   2   4
+   1   3   8
+   2   2   2
+
+a =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00229597 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:49:25
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+L =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   1   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   0
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   0
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   0
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+U =
+
+   2   1   2
+   1   3   2
+   2   2   2
+
+Elapsed time is 0.00236177 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:49:55
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+L =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   0   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   0   3   0
+   2   2   2
+
+U =
+
+   2   0   0
+   0   3   0
+   0   2   2
+
+U =
+
+   2   0   0
+   0   3   0
+   0   0   2
+
+U =
+
+   2   0   0
+   0   3   0
+   0   0   2
+
+Elapsed time is 0.00208521 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:50:44
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+error: called from
+    main at line 55 column 10
+error: 'U' undefined near line 55 column 12
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:51:11
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+U =
+
+   2   0   0
+   1   3   0
+   2   2   2
+
+Elapsed time is 0.00226998 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:52:06
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+U =
+
+   2   1   0
+   0   3   0
+   2   2   2
+
+Elapsed time is 0.00979114 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:53:07
+***** The input matrix A and vector B are:
+a =
+
+    2    2    4
+    1   10    8
+    4    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    8   12
+
+a =
+
+    2    2    4
+    1    3    8
+    2    2   12
+
+U =
+
+   2   1   2
+   0   3   2
+   0   0   2
+
+Elapsed time is 0.00226402 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:53:43
+***** The input matrix A and vector B are:
+Elapsed time is 0.00964403 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:55:44
+***** The input matrix A and vector B are:
+ans =
+
+    4    2    4
+    2   10    8
+    4    8   12
+
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                 B               L&U             D         X
+error: called from
+    main at line 72 column 3
+error: 'B' undefined near line 72 column 105
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:57:33
+***** The input matrix A and vector B are:
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                   L                   U                   X
+error: called from
+    main at line 72 column 3
+error: 'B' undefined near line 72 column 95
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:57:50
+***** The input matrix A and vector B are:
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                   L                   U                   X
+error: called from
+    main at line 72 column 3
+error: 'B' undefined near line 72 column 95
+>> main
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:58:02
+***** The input matrix A and vector B are:
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                   L                   U                   X
+2    0    0  		|  2  0  0 	|     2   0   0
+
+1    3    0  		|  1  3  0 	|     1   3   0
+
+2    2    2  		|  2  2  2 	|     2   2   2
+
+02-Oct-2018 11:58:02
+Elapsed time is 0.0153439 seconds.
+			Gauss Elimination
+			   Presented
+			      by
+			  George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:58:29
+***** The input matrix A and vector B are:
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                   L                   U                   X
+2    0    0  		|  2  0  0 	|     2   1   2
+
+1    3    0  		|  1  3  0 	|     0   3   2
+
+2    2    2  		|  2  2  2 	|     0   0   2
+
+02-Oct-2018 11:58:29
+Elapsed time is 0.00399899 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:59:17
+***** The input matrix A and vector B are:
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                   L                   U                   X
+2    0    0  		|  2  0  0 	|     2   1   2
+
+1    3    0  		|  1  3  0 	|     0   3   2
+
+2    2    2  		|  2  2  2 	|     0   0   2
+
+02-Oct-2018 11:59:17
+Elapsed time is 0.0169001 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:59:30
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+         A                   L                   U                   X
+2    0    0  		|  2  0  0 	|     2   1   2
+
+1    3    0  		|  1  3  0 	|     0   3   2
+
+2    2    2  		|  2  2  2 	|     0   0   2
+
+02-Oct-2018 11:59:30
+Elapsed time is 0.00542402 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 11:59:49
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+    A                          L                   U                   X
+2    0    0  		|  2  0  0 	|     2   1   2
+
+1    3    0  		|  1  3  0 	|     0   3   2
+
+2    2    2  		|  2  2  2 	|     0   0   2
+
+02-Oct-2018 11:59:49
+Elapsed time is 0.0121481 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 12:00:02
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+    A                       L                   U                   X
+2    0    0  	|  2  0  0 	|     2   1   2
+
+1    3    0  	|  1  3  0 	|     0   3   2
+
+2    2    2  	|  2  2  2 	|     0   0   2
+
+02-Oct-2018 12:00:02
+Elapsed time is 0.00388598 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 12:00:15
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+    A                  L                   U                 
+2    0    0  	|  2  0  0 	|     2   1   2
+
+1    3    0  	|  1  3  0 	|     0   3   2
+
+2    2    2  	|  2  2  2 	|     0   0   2
+
+02-Oct-2018 12:00:15
+Elapsed time is 0.00393891 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 12:00:37
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+	    A                  L                   U                 
+	2    0    0  	|  2  0  0 	|     2   1   2
+
+	1    3    0  	|  1  3  0 	|     0   3   2
+
+	2    2    2  	|  2  2  2 	|     0   0   2
+
+02-Oct-2018 12:00:37
+Elapsed time is 0.014945 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 12:00:49
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+	     A                 L                  U                 
+	2    0    0  	|  2  0  0 	|     2   1   2
+
+	1    3    0  	|  1  3  0 	|     0   3   2
+
+	2    2    2  	|  2  2  2 	|     0   0   2
+
+02-Oct-2018 12:00:49
+Elapsed time is 0.00348997 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 12:00:58
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+	     A                L                   U                 
+	2    0    0  	|  2  0  0 	|     2   1   2
+
+	1    3    0  	|  1  3  0 	|     0   3   2
+
+	2    2    2  	|  2  2  2 	|     0   0   2
+
+02-Oct-2018 12:00:58
+Elapsed time is 0.00562286 seconds.
+			Cholesky Method For Symmetric Matrices
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+02-Oct-2018 12:01:07
+______________________________________________________________________
+                        Input and Final Output
+
+______________________________________________________________________
+	     A                L                   U                 
+
+	2    0    0  	|  2  0  0 	|     2   1   2
+
+	1    3    0  	|  1  3  0 	|     0   3   2
+
+	2    2    2  	|  2  2  2 	|     0   0   2
+
+02-Oct-2018 12:01:07
+Elapsed time is 0.00326109 seconds.
