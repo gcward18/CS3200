@@ -1,0 +1,18 @@
+			Least Squares Method for Best Fit Line
+			            Presented
+			                by
+			          George C. Ward
+_______________________________________________________________________
+17-Oct-2018 12:24:02
+Observed pairs of data values
+	[ 6.000, 29.000 ]	[ 7.000, 21.000 ]	[ 11.000, 29.000 ]	[ 15.000, 14.000 ]	[ 17.000, 21.000 ]	[ 21.000, 15.000 ]	[ 23.000, 7.000 ]	[ 29.000, 7.000 ]	[ 29.000, 13.000 ]	[ 37.000, 0.000 ]	[ 39.000, 3.000 ]
+End Observed pairs
+
+ybar is: 14.455
+Degree of polynomial is: 1.00
+Coefficients of approximation are: -0.780547   31.058898
+Sm, Standard Deviation from y=ybar is: 9.811867
+Se, Standard Error from y=y_estimate is: 4.476306
+Coefficent of Variation cv_mean = 67.880838
+Confidence interval [ybar-sy,ybar+sy] is [4.643,24.266]
+With atleast 32.119 percent in [4.643,24.266]
